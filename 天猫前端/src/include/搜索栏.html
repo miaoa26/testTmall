@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<script src="bootstrap/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="bootstrap/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索栏</title>
+</head>
+<style>
+    div.searchDiv{
+        background-color: #c40000;
+        width: 400px;
+        margin: 50px auto;
+        padding:1px;
+        height: 40px;
+        display: block;
+    }
+    div.searchDiv input{
+        width: 275px;
+        height: 36px;
+        border: 1px solid transparent;
+        margin: 1px;
+        outline: none;
+    }
+    div.searchDiv button{
+        width: 110px;
+        border: 1px solid transparent;
+        background-color: #c40000;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    div.serchBelow{
+        margin-top: 3px;
+        margin-left: -20px;
+    }
+    div.serchBelow span{
+        color: #999;
+    }
+    div.serchBelow a{
+        padding:0px 20px 0px 20px;
+        font-size: 14px;
+    }
+    img.logo{
+        position: absolute;
+        left: 0px;
+        top:30px;
+        /*堆叠顺序：下面*/
+        z-index: -1;
+    }
+    body{
+        font-size: 12px;
+        /*字体*/
+        font-family: Arial;
+    }
+    a{
+        color: #999;
+    }
+    a:hover{
+        /*超链接悬停时没有下划线*/
+        text-decoration:none;
+        /*超链接鼠标悬停时为天猫红*/
+        color: #c40000;
+    }
+</style>
+<body>
+<div>
+    <a href="#nowhere">
+        <img class="logo" src="https://how2j.cn/tmall/img/site/logo.gif" class="logo">
+    </a>
+    <div class="searchDiv">
+        <!--placeholder描述输入字段预期值的提示信息-->
+        <input type="text" placeholder="时尚男鞋    太阳镜" name="keyword">
+        <button class="searchButton" type="submit">搜索</button>
+        <div class="serchBelow">
+            <span><a href="#nowhere">平衡车</a></span>|
+            <span><a href="#nowhere">扫地机器人</a></span>|
+            <span><a href="#nowhere">原汁机</a></span>|
+            <span><a href="#nowhere">冰箱</a></span>
+        </div>
+    </div>
+</div>
+<div style="height: 50px"></div>
+</body>
+</html>
